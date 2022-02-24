@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Josefin+Sans&family=Kalam:wght@300&family=Prompt:wght@100&display=swap');
+body {
+    margin: auto;
+    background-color: gainsboro;
+	max-width: 100%;
+}
+.conteneur {
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: 100px;
+    display: flex;
+}
+.header {
+    display: flex;
+}
+h3 {
+    font-size: 2em;
+    margin: auto;
+	font-family: 'Josefin Sans', sans-serif;
+	text-shadow: 2px 1px 2px red;
+}
+p {
+	font-size: 18px;
+	font-family: 'Akaya Telivigala', cursive;
+/*font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Prompt', sans-serif;*/
+}
+/*bouton retour*/
+nav img{
+	margin: auto;
+	text-align: center;
+	font-style: italic;
+	font-size: 20px;
+	width: 50px;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
+nav img a:hover {
+	text-transform: uppercase;
+	font-size: 24px;
+	color: red;
+	transform: scale(0.5);
+	transition: 1s;
+}
+
+/*image entete*/
+#lee {
+    width: 200px;
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+}
+#lee:hover {
+    display: flex;
+    transform: scale(1.2) skew(1deg);
+	transition: .3s ease-in-out;
+}
+#ul {
+    width: 70px;
+    padding: 10px 60px 10px 60px;
+    margin-top: 0;
+    margin-right: 0px;
+}
+#ul:hover {
+    display: flex;
+    transform: scale(1.2) skew(1deg);
+	transition: .3s ease-in-out;
+}
+/*navigation sur le corps du site*/
+.galerie {
+    max-width: 100%;
+	margin:auto;
+	/* border:solid; */
+	border-radius:5px;
+	/* box-shadow:2px 2px 5px gray; */
+	background:#ccc;
+	text-align:center;
+	width: auto;
+}
+.galerie a {
+	transform:scale(0.75);
+	width: 300px;
+	height: 300px;
+    border-radius:15px;
+	display:inline-block;
+	transform:scale(0.75);
+	overflow:hidden;
+	box-shadow: 0 0 15px gray;
+	border:solid white;
+	transition:1s;
+	z-index:1;
+	color: white;
+	text-shadow: black 2pX 1px 1pX;
+	font-size: 1.2em;
+}
+.galerie a:hover, #galerie a:focus{
+    transform:scale(1.0);
+    transform-origin:top center;
+	z-index:5;
+	background:white;
+	transition:1s;
+}
+.galerie a img{
+	height:300px;
+	width:300px;
+	border:none;
+	vertical-align:top;
+}
+.galerie a:before{
+	content:attr(title);
+	position:absolute;
+	color:white;
+	bottom:0;
+	box-shadow:s0 0 3px white;
+	display:block;
+	width:100%;
+	background:rgba(0,0,0,0.3);
+}
+/*mise en page des articles page modifiable*/
+#i1 {
+	background-image: url(images/img1.png);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin-top: 20px;
+}
+.exo {
+	opacity: 0.95;
+}
+/*
+#i2 {
+	background-image: url(images/powerpoint.png);
+	width: 100%;
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+*/
+#i3 {
+	background-image: url(images/excel.png);
+	width: 100%;
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.word {
+	max-width: 100%;
+	margin:auto;
+	/* border:solid; */
+	border-radius:5px;
+	/* box-shadow:2px 2px 5px gray; */
+	background:#ccc;
+	text-align:center;
+	width: auto;
+	opacity: 1;
+}
+.word a {
+	transform:scale(0.75);
+	width: 300px;
+	
+    border-radius:15px;
+	display:inline-block;
+	transform:scale(0.75);
+	overflow:hidden;
+	box-shadow: 0 0 15px gray;
+	border:solid white;
+	transition:1s;
+	z-index:1;
+	color: white;
+	text-shadow: black 1pX 0 1pX;
+	font-size: 1.2em;
+}
+.word a:hover, .word a:focus{
+    transform:scale(1.0);
+    transform-origin:top bottom;
+	z-index:5;
+	background:white;
+	transition:1s;
+}
+.word a img{
+	width:300px;
+	border:none;
+	vertical-align: center;
+	align-items: center;
+}
+.word a:before{
+	content:attr(title);
+	position:absolute;
+	color:white;
+	bottom:0;
+	box-shadow:s0 0 3px white;
+	display:block;
+	width:100%;
+	background:rgba(0,0,0,0.3);
+}
+.entre2 {
+	text-align: center;
+}
+.footer{
+	text-align: center;
+}

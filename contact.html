@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacter Grégory</title>
+</head>
+
+<body>
+    <div id="conteneur">
+        <div class="header">
+            <h1>Grégory Guellet</h1>
+            <h3>Bienvenue sur mon site</h3>
+            <img src="images/UpLinks Logo V1.4.png" alt="Logo UpLinks">
+        </div>
+        <div class="nav">
+            <nav>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="monparcours.html">Mon parcours</a></p>
+                <p><a href="mesrealisations.html">Mes réalisations</a></p>
+                <p><a href="mesprojets.html">Mes projets</a></p>
+                <!--<p><a href="contact.html">Contact</a></p>-->
+            </nav>
+        </div>
+        <div class="formulaire">
+            <!--pas de methode get, pas recommandee car variables visible ds url-->
+            <form method="post" action="traitement.html">
+                <label for="prenom">Votre prénom:</label>
+                <input type="text" id="prenom" name="prenom">
+                <br><br>
+                <label for="nom">Votre nom:</label>
+                <input type="text" id="nom" name="nom">
+                <br><br>
+                <label for="date">Votre date de naissance:</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+                <label for="mail">Votre Email:</label>
+                <input type="email" id="mail" name="email">
+                <br><br>
+                <label for="msg">Votre message</label>
+                <textarea id="msg" name="message"></textarea>
+                <br><br>
+                - Aimez vous cette formation? <br>
+                <input type="radio" id="oui" name="formation" value="oui" checked >
+                <label for="oui">Oui</label>
+                <input type="radio" id="non" name="formation" value="non">
+                <label for="non">Non</label>
+                <br><br>
+                - Etes-vous majeur ?
+                <input type="radio" id="ouimajeur" name="majeur" value="oui" >
+                <label for="ouimajeur">Oui</label>
+                <br><br>
+                <input type="radio" id="nonmajeur" name="majeur" value="non" >
+                <label for="nonmajeur">Non</label>
+                <br><br>
+                - Quelles sont vos pizza préférées? <br>
+                <input type="checkbox" id="calzone" name="pizza" value="calzone">
+                <label for="calzone">Calzone</label><br>
+                <input type="checkbox" id="margarita" name="pizza" value="margarita">
+                <label for="margarita">Margarita</label><br>
+                <br><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+
+</body>
+
+</html>
